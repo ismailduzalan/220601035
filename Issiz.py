@@ -22,3 +22,8 @@ class Issiz(Insan): # Insan class'ından Issiz class'ı türetildi.
         return self.__statu
     def setStatu(self, statu):
         self.__statu = statu
+    def statu_bul(self): # En uygun statünün bulunması için statu_bul metodu yazıldı. 
+        statu = {"mavi yaka": self.__yil["mavi"] * 0.2, "beyaz yaka": self.__yil["beyaz"] * 0.35, "yönetici": self.__yil["yon"] * 0.45}
+        maxStatu = max(statu, key=statu.get)
+        self.setStatu(maxStatu)
+        return self.getStatu()
