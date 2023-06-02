@@ -14,8 +14,15 @@
 # f) Yeni maaşı 10000 TL üzerinde olanlar için; 2-5 satır arası olanları, tc_no ve yeni_maaş sütunlarını seçerek gösteriniz ve yazdırınız.
 # g) Var olan DataFrame’den ad, soyad, sektör ve yeni maaşı içeren yeni bir DataFrame elde ediniz ve yazdırınız.
 from Insan import Insan
+from Issiz import Issiz
 def main():
     insn1 = Insan("1", "Saner", "Evcin", 42, "Erkek", "Türk")
     insn2 = Insan("2", "Bade", "Ünay", 22, "Kadın", "Türk")
+    issz1 = Issiz("3", "Cumhur", "Yakar", 25, "Erkek", "Türk", {"mavi": 4, "beyaz": 2, "yon": 0})
+    issz2 = Issiz("4", "Vildan", "Göğebakan", 35, "Kadın", "Türk", {"mavi": 2, "beyaz": 4, "yon": 10})
+    issz3 = Issiz("5", "Yıldırım", "Aşan", 51, "Erkek", "Türk", {"mavi": 10, "beyaz": 12, "yon": 0})
     print(insn1)
     print(insn2)
+    print(issz1)
+    print(issz2)
+    print(issz3)
