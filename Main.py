@@ -16,6 +16,7 @@
 from Insan import Insan
 from Issiz import Issiz
 from Calisan import Calisan
+from MaviYaka import MaviYaka
 from BeyazYaka import BeyazYaka
 def main():
     insn1 = Insan("1", "Saner", "Evcin", 42, "Erkek", "Türk")
@@ -26,6 +27,9 @@ def main():
     cal1 = Calisan("6", "Nezih", "Kızmazoğlu", 20, "Erkek", "Türk", "Teknoloji", 22, 21000)
     cal2 = Calisan("7", "Toyanç", "Güçlü", 19, "Erkek", "Türk", "İnşaat", 13, 9000)
     cal3 = Calisan("8", "Efe", "Uzunçakmak", 45, "Erkek", "Türk", "Muhasebe", 66, 19000)
+    mvyk1 = MaviYaka("9", "Emir", "Turhan", 18, "Erkek", "Türk", "İnşaat", 10000, 5, 0.2)
+    mvyk2 = MaviYaka("10", "Funda", "Atbinici", 29, "Kadın", "Türk", "Muhasebe", 12000, 15, 0.4)
+    mvyk3 = MaviYaka("11", "Gül", "Avcı", 31, "Kadın", "Türk", "Diğer", 19000, 29, 0.8)
     byzk1 = BeyazYaka("12", "Beyza", "Yılmaz", 26, "Kadın", "Türk", "Diğer", 14000, 19, 2000)
     byzk2 = BeyazYaka("13", "Tevfik", "Uzunoğlu", 40, "Erkek", "Türk", "Teknoloji", 21000, 22, 2500)
     byzk3 = BeyazYaka("14", "İsa", "Yılmaz", 50, "Erkek", "Türk", "Muhasebe", 19000, 35, 3000)
@@ -37,6 +41,9 @@ def main():
     print(cal1)
     print(cal2)
     print(cal3)
+    print(mvyk1)
+    print(mvyk2)
+    print(mvyk3)
     print(byzk1)
     print(byzk2)
     print(byzk3)
