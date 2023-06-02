@@ -18,6 +18,7 @@ from Issiz import Issiz
 from Calisan import Calisan
 from MaviYaka import MaviYaka
 from BeyazYaka import BeyazYaka
+import pandas as pd
 def main():
     insn1 = Insan("1", "Saner", "Evcin", 42, "Erkek", "Türk")
     insn2 = Insan("2", "Bade", "Ünay", 22, "Kadın", "Türk")
@@ -59,3 +60,7 @@ def main():
     primler = [0, 0, 0, 0, 0, 0, byzk1.gettesvik_primi(), byzk2.gettesvik_primi(), byzk3.gettesvik_primi()]
     yipranmalar = [0, 0, 0, mvyk1.getyipranmapayi(), mvyk2.getyipranmapayi(), mvyk3.getyipranmapayi(), 0, 0, 0]
     yeni_maaslar = [cal1.getmaasi() + cal1.getmaasi()*cal1.zam_hakki(), cal2.getmaasi() + cal2.getmaasi()*cal2.zam_hakki(), cal3.getmaasi() + cal3.getmaasi()*cal3.zam_hakki(), mvyk1.getmaasi() + mvyk1.getmaasi()*mvyk1.zam_hakki(), mvyk2.getmaasi() + mvyk2.getmaasi()*mvyk2.zam_hakki(), mvyk3.getmaasi() + mvyk3.getmaasi()*mvyk3.zam_hakki(), byzk1.getmaasi() + byzk1.zam_hakki(), byzk2.getmaasi() + byzk2.zam_hakki(), byzk3.getmaasi() + byzk3.zam_hakki()]
+    tablo = pd.DataFrame({"Nesne": nesneler, "Kimlik": kimlikler, "Ad": adlar, "Soyad": soyadlar, "Yaş": yaslar, "Cinsiyet": cinsiyetler, "Uyruk": uyruklar, "Sektör": sektorler, "Maaş": maaslar, "Prim": primler, "Yıpranma Payı": yipranmalar, "Yeni Maaş": yeni_maaslar})
+    print(tablo)
+    print("Maaşı 15000TL üzerinde olanların toplam sayısı: ", len(tablo[tablo["Maaş"] > 15000]))
+    print(tablo.sort_values(by = "Yeni Maaş"))
