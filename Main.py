@@ -64,3 +64,15 @@ def main():
     print(tablo)
     print("Maaşı 15000TL üzerinde olanların toplam sayısı: ", len(tablo[tablo["Maaş"] > 15000]))
     print(tablo.sort_values(by = "Yeni Maaş"))
+    print(tablo[(tablo["Nesne"] == "Beyaz Yaka") & (tablo["Tecrübe"] > 3)])
+    print(tablo[tablo["Yeni Maaş"] > 10000][["Kimlik", "Yeni Maaş"]][2:5])
+    print(tablo[["Ad", "Soyad", "Sektör", "Yeni Maaş"]])  
+if __name__ == "__main__":
+    main() 
+
+
+
+
+
+
+#
