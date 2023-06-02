@@ -10,7 +10,7 @@ class BeyazYaka(Calisan): # Calisan class'ından BeyazYaka class'ı türetildi.
         super().__init__(kimlik, adi, soyadi, yasi, cinsiyeti, uyruk, sektoru, tecrubesi, maasi) # Calisan class'ının özellikleri miras alındı.
         self.__tesvik_primi = tesvik_primi # BeyazYaka class'ının özellikleri tanımlandı.
     def __str__(self): # Calisan class'ının özellikleri yazdırıldı.
-        return super().__str__() + "\nSektörü: " + self.getsektoru() + "\nTecrübesi: " + str(self.gettecrubesi()) + "\nYeni Maaşı: " + str(self.getmaasi() + self.zam_hakki()) + " TL"
+        return super().__str__() + "Sektörü: " + self.getsektoru() + "\nTecrübesi: " + str(self.gettecrubesi()) + "\nYeni Maaşı: " + str(self.getmaasi() + self.zam_hakki()) + " TL\n"
     def gettesvik_primi(self): # get_tesvik_primi fonksiyonu tanımlandı.
         return self.__tesvik_primi # get_tesvik_primi fonksiyonu çağırıldığında __tesvik_primi değeri döndürülecek.
     def settesvik_primi(self, tesvik_primi): # set_tesvik_primi fonksiyonu tanımlandı.
