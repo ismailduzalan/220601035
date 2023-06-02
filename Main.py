@@ -13,3 +13,9 @@
 # e) Tecrübesi 3 seneden fazla olan Beyaz yakalıları bulunuz ve yazdırınız.
 # f) Yeni maaşı 10000 TL üzerinde olanlar için; 2-5 satır arası olanları, tc_no ve yeni_maaş sütunlarını seçerek gösteriniz ve yazdırınız.
 # g) Var olan DataFrame’den ad, soyad, sektör ve yeni maaşı içeren yeni bir DataFrame elde ediniz ve yazdırınız.
+from Insan import Insan
+def main():
+    insn1 = Insan("1", "Saner", "Evcin", 42, "Erkek", "Türk")
+    insn2 = Insan("2", "Bade", "Ünay", 22, "Kadın", "Türk")
+    print(insn1)
+    print(insn2)
