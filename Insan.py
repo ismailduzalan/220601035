@@ -13,3 +13,9 @@ class Insan: #insan sınıfı oluşturuldu
         self.__uyruk=uyruk
     def __str__(self): #insan sınıfının özellikleri yazdırıldı
         return "Kimlik: {}\nAdı: {}\nSoyadı: {}\nYaşı: {}\nCinsiyeti: {}\nUyruk: {}\n".format(self.__kimlik,self.__adi,self.__soyadi,self.__yasi,self.__cinsiyeti,self.__uyruk)
+
+
+
+
+
+        
