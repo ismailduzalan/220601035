@@ -15,14 +15,21 @@
 # g) Var olan DataFrame’den ad, soyad, sektör ve yeni maaşı içeren yeni bir DataFrame elde ediniz ve yazdırınız.
 from Insan import Insan
 from Issiz import Issiz
+from Calisan import Calisan
 def main():
     insn1 = Insan("1", "Saner", "Evcin", 42, "Erkek", "Türk")
     insn2 = Insan("2", "Bade", "Ünay", 22, "Kadın", "Türk")
     issz1 = Issiz("3", "Cumhur", "Yakar", 25, "Erkek", "Türk", {"mavi": 4, "beyaz": 2, "yon": 0})
     issz2 = Issiz("4", "Vildan", "Göğebakan", 35, "Kadın", "Türk", {"mavi": 2, "beyaz": 4, "yon": 10})
     issz3 = Issiz("5", "Yıldırım", "Aşan", 51, "Erkek", "Türk", {"mavi": 10, "beyaz": 12, "yon": 0})
+    cal1 = Calisan("6", "Nezih", "Kızmazoğlu", 20, "Erkek", "Türk", "Teknoloji", 22, 21000)
+    cal2 = Calisan("7", "Toyanç", "Güçlü", 19, "Erkek", "Türk", "İnşaat", 13, 9000)
+    cal3 = Calisan("8", "Efe", "Uzunçakmak", 45, "Erkek", "Türk", "Muhasebe", 66, 19000)
     print(insn1)
     print(insn2)
     print(issz1)
     print(issz2)
     print(issz3)
+    print(cal1)
+    print(cal2)
+    print(cal3)
