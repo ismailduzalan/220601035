@@ -27,3 +27,10 @@ class Calisan(Insan): # Insan class'ından Calisan class'ı türetildi.
         return self.__maas
     def setmaasi(self, maas):
         self.__maas = maas
+    def zam_hakki(self): # zam_hakki metodu tanımlandı.
+        try:
+            zam = 0
+        except:
+            print("Hatalı giriş yaptınız.")
+            zam = 0
+        return zam / 100
