@@ -47,3 +47,15 @@ def main():
     print(byzk1)
     print(byzk2)
     print(byzk3)
+    nesneler = ["Çalışan", "Çalışan", "Çalışan", "Mavi Yaka", "Mavi Yaka", "Mavi Yaka", "Beyaz Yaka", "Beyaz Yaka", "Beyaz Yaka"]
+    kimlikler = [cal1.getkimlik(), cal2.getkimlik(), cal3.getkimlik(), mvyk1.getkimlik(), mvyk2.getkimlik(), mvyk3.getkimlik(), byzk1.getkimlik(), byzk2.getkimlik(), byzk3.getkimlik()]
+    adlar = [cal1.getadi(), cal2.getadi(), cal3.getadi(), mvyk1.getadi(), mvyk2.getadi(), mvyk3.getadi(), byzk1.getadi(), byzk2.getadi(), byzk3.getadi()]
+    soyadlar = [cal1.getsoyadi(), cal2.getsoyadi(), cal3.getsoyadi(), mvyk1.getsoyadi(), mvyk2.getsoyadi(), mvyk3.getsoyadi(), byzk1.getsoyadi(), byzk2.getsoyadi(), byzk3.getsoyadi()]
+    yaslar = [cal1.getyasi(), cal2.getyasi(), cal3.getyasi(), mvyk1.getyasi(), mvyk2.getyasi(), mvyk3.getyasi(), byzk1.getyasi(), byzk2.getyasi(), byzk3.getyasi()]
+    cinsiyetler = [cal1.getcinsiyeti(), cal2.getcinsiyeti(), cal3.getcinsiyeti(), mvyk1.getcinsiyeti(), mvyk2.getcinsiyeti(), mvyk3.getcinsiyeti(), byzk1.getcinsiyeti(), byzk2.getcinsiyeti(), byzk3.getcinsiyeti()]
+    uyruklar = [cal1.getuyruk(), cal2.getuyruk(), cal3.getuyruk(), mvyk1.getuyruk(), mvyk2.getuyruk(), mvyk3.getuyruk(), byzk1.getuyruk(), byzk2.getuyruk(), byzk3.getuyruk()]
+    sektorler = [cal1.getsektoru(), cal2.getsektoru(), cal3.getsektoru(), mvyk1.getsektoru(), mvyk2.getsektoru(), mvyk3.getsektoru(), byzk1.getsektoru(), byzk2.getsektoru(), byzk3.getsektoru()]
+    maaslar = [cal1.getmaasi(), cal2.getmaasi(), cal3.getmaasi(), mvyk1.getmaasi(), mvyk2.getmaasi(), mvyk3.getmaasi(), byzk1.getmaasi(), byzk2.getmaasi(), byzk3.getmaasi()]
+    primler = [0, 0, 0, 0, 0, 0, byzk1.gettesvik_primi(), byzk2.gettesvik_primi(), byzk3.gettesvik_primi()]
+    yipranmalar = [0, 0, 0, mvyk1.getyipranmapayi(), mvyk2.getyipranmapayi(), mvyk3.getyipranmapayi(), 0, 0, 0]
+    yeni_maaslar = [cal1.getmaasi() + cal1.getmaasi()*cal1.zam_hakki(), cal2.getmaasi() + cal2.getmaasi()*cal2.zam_hakki(), cal3.getmaasi() + cal3.getmaasi()*cal3.zam_hakki(), mvyk1.getmaasi() + mvyk1.getmaasi()*mvyk1.zam_hakki(), mvyk2.getmaasi() + mvyk2.getmaasi()*mvyk2.zam_hakki(), mvyk3.getmaasi() + mvyk3.getmaasi()*mvyk3.zam_hakki(), byzk1.getmaasi() + byzk1.zam_hakki(), byzk2.getmaasi() + byzk2.zam_hakki(), byzk3.getmaasi() + byzk3.zam_hakki()]
