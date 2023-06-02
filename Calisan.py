@@ -30,6 +30,14 @@ class Calisan(Insan): # Insan class'ından Calisan class'ı türetildi.
     def zam_hakki(self): # zam_hakki metodu tanımlandı.
         try:
             zam = 0
+            if self.__tecrube < 24: # 2 sene öncesi tecrübesi olanın zam oranı önerisi 0’dır.
+                zam = 0
+            elif self.__tecrube >= 24 and self.__tecrube <= 48 and self.__maas < 15000: # Tecrübesi 2-4 sene arası çalışan ise ve maaş 15000TL altıysa “maaş%tecrübe” sonucu zam oranı önerilecektir.
+                zam = self.__maas % self.__tecrube 
+            elif self.__tecrube > 48 and self.__maas < 25000: # Tecrübesi 4 seneden fazla varsa ve maaş 25000 altıysa “(maaş%tecrübe)/2” zam oranı önerilecektir).
+                zam =( self.__maas % self.__tecrube )/2
+            else:
+                zam = 0
         except:
             print("Hatalı giriş yaptınız.")
             zam = 0
